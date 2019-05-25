@@ -1,9 +1,9 @@
 'use strict'
 
-const Log = require('../../src/log.js')
+const Log = require('ipfs-log')
 
 class LogCreator {
-  static async createLogWithSixteenEntries (ipfs, identities) {
+  static async createLogWithSixteenEntries (Log, ipfs, identities) {
     const create = async () => {
       let logA = new Log(ipfs, identities[0], { logId: 'X' })
       let logB = new Log(ipfs, identities[1], { logId: 'X' })
@@ -39,7 +39,7 @@ class LogCreator {
     return { log: log, expectedData: expectedData, json: log.toJSON() }
   }
 
-  static async createLogWithTwoHundredEntries (ipfs, identities) {
+  static async createLogWithTwoHundredEntries (Log, ipfs, identities) {
     const amount = 100
 
     let expectedData = []
