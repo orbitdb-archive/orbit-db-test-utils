@@ -36,7 +36,6 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/runtime": "^7.4.5",
     "assert": "^2.0.0",
-    "ipfs-log": "^4.3.1",
     "babel-loader": "^8.0.6",
     "mocha": "^6.1.4",
     "mocha-headless-chrome": "aphelionz/mocha-headless-chrome",

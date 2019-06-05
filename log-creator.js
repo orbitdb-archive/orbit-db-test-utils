@@ -1,6 +1,13 @@
 'use strict'
 
-const Log = require('ipfs-log')
+let Log
+try {
+  Log = require('ipfs-log')
+} catch (e) {
+  // To eliminate ipfs-log circular dependency
+  Log = require('../../src/log.js')
+}
+
 
 class LogCreator {
   static async createLogWithSixteenEntries (Log, ipfs, identities) {
