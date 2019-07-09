@@ -1,11 +1,11 @@
 {
   "name": "orbit-db-test-utils",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/orbitdb/orbit-db"
+    "url": "https://github.com/orbitdb/orbit-db-test-utils"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,9 +18,9 @@
   "dependencies": {
     "babel-loader": "^8.0.6",
     "fruitdown": "^1.0.2",
-    "go-ipfs-dep": "~0.4.20",
+    "go-ipfs-dep": "~0.4.21",
     "ipfs": "^0.36.4",
-    "ipfsd-ctl": "^0.42.2",
+    "ipfsd-ctl": "^0.44.0",
     "is-node": "^1.0.2",
     "jsondown": "^1.0.0",
     "level-js": "^4.0.1",
