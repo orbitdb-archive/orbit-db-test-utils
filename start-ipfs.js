@@ -25,9 +25,13 @@ const startIpfs = async (type, config = {}) => {
   // Use custom storage backend for IPFS block store
   // NOTE: need to duck-type 'repoPath' instead of 'repo' as ipfsd-ctl
   // flips the two, so passing 'repo' doesn't work as it does with js-ipfs
-  if (isNode) {
+  if (false && isNode) {
+    const repo = new IPFSRepo(config.repo)
+    await repo.init(repoConf)
+    await repo.open()
+
     // Use DatastoreLevel only in Nodejs environment
-    config = Object.assign({}, config, { repoPath: new IPFSRepo(config.repo, repoConf) })
+    config = Object.assign({}, config, { repoPath: repo.path })
   }
 
   // If we're starting a process, pass command line arguments to it
