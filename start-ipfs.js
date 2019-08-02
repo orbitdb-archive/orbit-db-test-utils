@@ -43,7 +43,6 @@ const startIpfs = async (type, config = {}) => {
   try {
     const f = IPFSFactory.create(testAPIs[type])
     const ipfsd = await f.spawn(config)
-    debugger;
     return ipfsd.api;
   } catch(err) {
     throw new Error(err)
