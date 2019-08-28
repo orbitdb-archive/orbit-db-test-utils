@@ -1,6 +1,6 @@
 {
   "name": "orbit-db-test-utils",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -29,6 +29,7 @@
     "mongo-unit": "^1.4.4",
     "mongodown": "^1.2.0",
     "multihashing-async": "^0.7.0",
+    "orbit-db-storage-adapter": "^0.4.2",
     "redisdown": "^0.1.12",
     "sqldown": "^2.1.0",
     "sqlite3": "^4.0.8"
