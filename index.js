@@ -1,4 +1,4 @@
-exports.config = require('./config.js')
+exports.config = require('./config')
 exports.testAPIs = require('./test-apis')
 exports.startIpfs = require('./start-ipfs')
 exports.stopIpfs = require('./stop-ipfs')
