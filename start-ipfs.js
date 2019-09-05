@@ -35,7 +35,7 @@ const startIpfs = async (type, config = {}) => {
   }
 
   // If we're starting a process, pass command line arguments to it
-  if (!config.args) {
+  if (type ==="go-ipfs" && !config.args) {
     config.args = ['--enable-pubsub-experiment']
   }
 
