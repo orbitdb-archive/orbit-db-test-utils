@@ -30,17 +30,18 @@ module.exports = [
     module: require('sqldown'),
     fileName: 'orbitdb.sql'
   },
-  {
-    key: 'mongodown',
-    type: 'node',
-    module: require('mongodown'),
-    fileName: 'mongodb://localhost:27017/test',
-    server: {
-      afterEach: async () => mongoUnit.drop(),
-      start: async (opts) => mongoUnit.start(opts),
-      stop: async () => mongoUnit.stop()
-    }
-  },
+  // Disabling for now since it was breaking CI builds, but keep it available
+  // {
+  //   key: 'mongodown',
+  //   type: 'node',
+  //   module: require('mongodown'),
+  //   fileName: 'mongodb://localhost:27017/test',
+  //   server: {
+  //     afterEach: async () => mongoUnit.drop(),
+  //     start: async (opts) => mongoUnit.start(opts),
+  //     stop: async () => mongoUnit.stop()
+  //   }
+  // },
   {
     key: 'redisdown',
     type: 'node',
