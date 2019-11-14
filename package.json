@@ -18,7 +18,7 @@
   "dependencies": {
     "babel-loader": "^8.0.6",
     "fruitdown": "^1.0.2",
-    "go-ipfs-dep": "aphelionz/npm-go-ipfs-dep",
+    "go-ipfs-dep": "~0.4.20",
     "ipfs": "^0.37.0",
     "ipfsd-ctl": "^0.46.0",
     "is-node": "^1.0.2",
