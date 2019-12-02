@@ -15,9 +15,9 @@ let jsIpfs = {
 
 const goIpfs = {
   'go-ipfs': {
-    type: 'go'
-  },
-  IpfsClient: require('ipfs-http-client')
+    type: 'go',
+    IpfsClient: require('ipfs-http-client')
+  }
 }
 
 // By default, we run tests against js-ipfs.
