@@ -19,7 +19,7 @@
     "babel-loader": "^8.0.6",
     "fruitdown": "^1.0.2",
     "go-ipfs-dep": "~0.4.20",
-    "ipfs": "^0.39.0",
+    "ipfs": "~0.40.0",
     "ipfsd-ctl": "^0.47.4",
     "is-node": "^1.0.2",
     "jsondown": "^1.0.0",
