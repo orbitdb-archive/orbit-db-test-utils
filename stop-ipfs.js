@@ -5,19 +5,12 @@
  * @param  {Object}  config  [IPFS ipfsd-ctl to stop]
  * @return {None}
  */
-const stopIpfs = (ipfs) => {
-  if (!ipfs) {
+const stopIpfs = async (ipfsd) => {
+  if (!ipfsd) {
     return Promise.resolve()
   }
 
-  return new Promise(async (resolve, reject) => {
-    ipfs.stop((err) => {
-      if (err) {
-        reject(err)
-      }
-      resolve()
-    })
-  })
+  await ipfsd.stop()
 }
 
 module.exports = stopIpfs
