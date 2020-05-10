@@ -15,7 +15,8 @@ let jsIpfs = {
 
 const goIpfs = {
   'go-ipfs': {
-    type: 'go'
+    type: 'go',
+    IpfsClient: require('ipfs-http-client')
   }
 }
 
