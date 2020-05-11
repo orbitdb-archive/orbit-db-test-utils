@@ -4,13 +4,13 @@ const {
   connectPeers,
   startIpfs,
   stopIpfs,
-  testApis,
+  testAPIs,
   getIpfsPeerId,
   waitForPeers
 } = require('../')
 
 describe('Manual Workflow', function () {
-  Object.keys(testApis).forEach((api) => {
+  Object.keys(testAPIs).forEach((api) => {
     describe(`Success: Start and stop ${api}`, function () {
       this.timeout(10000)
 

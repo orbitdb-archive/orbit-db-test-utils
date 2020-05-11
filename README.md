@@ -25,7 +25,6 @@ const {
   connectPeers,
   startIpfs,
   stopIpfs,
-  testApis,
   getIpfsPeerId,
   waitForPeers
 } = require('../')
