@@ -5,7 +5,7 @@ exports.connectPeers = require('./connect-peers')
 exports.getIpfsPeerId = require('./get-ipfs-peer-id')
 exports.startIpfs = require('./start-ipfs')
 exports.stopIpfs = require('./stop-ipfs')
-exports.testApis = require('./test-apis.js')
+exports.testAPIs = require('./test-apis.js')
 exports.waitForPeers = require('./wait-for-peers')
 
 // Different abstract-leveldown implementations
