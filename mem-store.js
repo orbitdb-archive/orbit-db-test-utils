@@ -39,6 +39,8 @@ class MemStore {
     }
 
     const data = this._store.get(cid)
+
+    // TODO: Change this to refs
     const links = ['next', 'heads']
     links.forEach((prop) => {
       if (data[prop]) {

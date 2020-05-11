@@ -1,5 +1,3 @@
-const IPFS = require('ipfs')
-
 /**
  * IPFS daemons to run the tests with.
  */
@@ -9,14 +7,20 @@ const IPFS = require('ipfs')
 let jsIpfs = {
   'js-ipfs': {
     type: 'proc',
-    exec: IPFS
+    test: true,
+    disposable: true,
+    ipfsModule: require('ipfs')
   }
 }
 
 const goIpfs = {
   'go-ipfs': {
     type: 'go',
-    IpfsClient: require('ipfs-http-client')
+    test: true,
+    disposable: true,
+    args: ['--enable-pubsub-experiment'],
+    ipfsHttpModule: require('ipfs-http-client'),
+    ipfsBin: require('go-ipfs-dep').path()
   }
 }
 
