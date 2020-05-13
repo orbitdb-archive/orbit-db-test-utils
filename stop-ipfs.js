@@ -10,7 +10,9 @@ const stopIpfs = async (ipfsd) => {
     return Promise.resolve()
   }
 
-  await ipfsd.stop()
+  setTimeout(async () => {
+    await ipfsd.stop()
+  }, 0)
 }
 
 module.exports = stopIpfs
