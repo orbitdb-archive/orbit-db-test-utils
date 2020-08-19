@@ -20,7 +20,7 @@ const goIpfs = {
     disposable: true,
     args: ['--enable-pubsub-experiment'],
     ipfsHttpModule: require('ipfs-http-client'),
-    ipfsBin: require('go-ipfs-dep').path()
+    ipfsBin: require('go-ipfs').path()
   }
 }
 
