@@ -21,7 +21,7 @@
   "license": "ISC",
   "dependencies": {
     "fruitdown": "^1.0.2",
-    "go-ipfs-dep": "~0.6.0",
+    "go-ipfs": "~0.6.0",
     "ipfs": "^0.48.0",
     "ipfs-http-client": "~45.0.0",
     "ipfs-repo": "^4.0.0",
