@@ -25,7 +25,7 @@ class MemStore {
   async put (value) {
     const buffer = Buffer.from(JSON.stringify(value))
     const multihash = await multihashing(buffer, 'sha2-256')
-    const cid = new CID(1, 'dag-cbor', multihash)
+    const cid = new CID(1, 'dag-cbor', Buffer.from(multihash))
     const key = cid.toBaseEncodedString(defaultBase)
 
     this._store.set(key, value)
