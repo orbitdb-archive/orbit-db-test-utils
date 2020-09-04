@@ -1,6 +1,6 @@
 {
   "name": "orbit-db-test-utils",
-  "version": "0.10.3",
+  "version": "0.10.4",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -23,8 +23,8 @@
   "dependencies": {
     "fruitdown": "^1.0.2",
     "go-ipfs": "^0.6.0",
-    "ipfs": "^0.49.0",
-    "ipfs-http-client": "~46.0.0",
+    "ipfs": "^0.50.1",
+    "ipfs-http-client": "~46.1.1",
     "ipfs-repo": "^6.0.3",
     "ipfsd-ctl": "^7.0.0",
     "js-combinatorics": "0.6.1",
