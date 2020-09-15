@@ -41,7 +41,7 @@ module.exports = {
     config: {
       Addresses: {
         API: '/ip4/127.0.0.1/tcp/0',
-        Swarm: ['/dns4/ws-star.discovery.libp2p.io/tcp/443/wss/p2p-websocket-star'],
+        Swarm: ['/dns4/wrtc-star1.par.dwebops.pub/tcp/443/wss/p2p-webrtc-star'],
         Gateway: '/ip4/0.0.0.0/tcp/0'
       },
       Bootstrap: [],
@@ -66,7 +66,7 @@ module.exports = {
     config: {
       Addresses: {
         API: '/ip4/127.0.0.1/tcp/0',
-        Swarm: ['/dns4/ws-star.discovery.libp2p.io/tcp/443/wss/p2p-websocket-star'],
+        Swarm: ['/dns4/wrtc-star1.par.dwebops.pub/tcp/443/wss/p2p-webrtc-star'],
         Gateway: '/ip4/0.0.0.0/tcp/0'
       },
       Bootstrap: [],
