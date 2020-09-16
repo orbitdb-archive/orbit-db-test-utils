@@ -8,7 +8,6 @@ module.exports = {
     preload: {
       enabled: false
     },
-    repo: './ipfs/ipfs-log/tests/daemon',
     start: true,
     EXPERIMENTAL: {
       pubsub: true
@@ -32,7 +31,6 @@ module.exports = {
     }
   },
   daemon1: {
-    repo: './ipfs/ipfs-log/tests/daemon1',
     start: true,
     relay: { enabled: true, hop: { enabled: true, active: true } },
     EXPERIMENTAL: {
@@ -57,7 +55,6 @@ module.exports = {
     }
   },
   daemon2: {
-    repo: './ipfs/ipfs-log/tests/daemon2',
     start: true,
     relay: { enabled: true, hop: { enabled: true, active: true } },
     EXPERIMENTAL: {
