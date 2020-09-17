@@ -16,7 +16,7 @@ describe('Manual Workflow', function () {
 
       let ipfsd1, ipfsd2
 
-      it(`starts and stops two connected nodes`, async () => {
+      it('starts and stops two connected nodes', async () => {
         const topic = 'test-topic'
 
         ipfsd1 = await startIpfs(api)
