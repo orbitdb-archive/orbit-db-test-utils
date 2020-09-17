@@ -1,10 +1,18 @@
 'use strict'
 
-const connectIpfsNodes = async (ipfs1, ipfs2) => {
+const defaultFilter = () => true
+
+const connectIpfsNodes = async (ipfs1, ipfs2, options = {
+  filter: defaultFilter
+}) => {
   const id1 = await ipfs1.id()
   const id2 = await ipfs2.id()
-  await ipfs1.swarm.connect(id2.addresses[0])
-  await ipfs2.swarm.connect(id1.addresses[0])
+
+  const addresses1 = id1.addresses.filter(options.filter)
+  const addresses2 = id2.addresses.filter(options.filter)
+
+  await ipfs1.swarm.connect(addresses2[0])
+  await ipfs2.swarm.connect(addresses1[0])
 }
 
 module.exports = connectIpfsNodes
