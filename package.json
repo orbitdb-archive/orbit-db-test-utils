@@ -1,6 +1,6 @@
 {
   "name": "orbit-db-test-utils",
-  "version": "0.12.1",
+  "version": "0.13.1",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -22,11 +22,10 @@
   "license": "ISC",
   "dependencies": {
     "fruitdown": "^1.0.2",
-    "go-ipfs": "^0.6.0",
-    "ipfs": "^0.50.2",
-    "ipfs-http-client": "~47.0.1",
-    "ipfs-repo": "^6.0.3",
-    "ipfsd-ctl": "^7.0.0",
+    "go-ipfs": "^0.7.0",
+    "ipfs": "^0.52.0",
+    "ipfs-http-client": "~48.1.0",
+    "ipfsd-ctl": "^7.1.0",
     "js-combinatorics": "0.6.1",
     "jsondown": "^1.0.0",
     "localstorage-down": "^0.6.7",
@@ -41,9 +40,9 @@
   },
   "devDependencies": {
     "assert": "^2.0.0",
-    "mocha": "^8.0.1",
+    "mocha": "^8.2.1",
     "nyc": "^15.1.0",
-    "standard": "^14.3.4"
+    "standard": "^16.0.2"
   },
   "localMaintainers": [
     "shamb0t <shams@haja.io>",
