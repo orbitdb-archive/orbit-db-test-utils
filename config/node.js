@@ -21,7 +21,7 @@ module.exports = {
       Bootstrap: [],
       Discovery: {
         MDNS: {
-          Enabled: true,
+          Enabled: false,
           Interval: 0
         },
         webRTCStar: {
@@ -44,7 +44,7 @@ module.exports = {
       Bootstrap: [],
       Discovery: {
         MDNS: {
-          Enabled: true,
+          Enabled: false,
           Interval: 0
         },
         webRTCStar: {
