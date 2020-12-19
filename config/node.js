@@ -8,7 +8,6 @@ module.exports = {
     preload: {
       enabled: false
     },
-    start: true,
     EXPERIMENTAL: {
       pubsub: true
     },
@@ -31,7 +30,6 @@ module.exports = {
     }
   },
   daemon1: {
-    start: true,
     EXPERIMENTAL: {
       pubsub: true
     },
@@ -54,7 +52,6 @@ module.exports = {
     }
   },
   daemon2: {
-    start: true,
     EXPERIMENTAL: {
       pubsub: true
     },
