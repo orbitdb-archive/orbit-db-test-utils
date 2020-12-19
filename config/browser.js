@@ -15,7 +15,7 @@ module.exports = {
       Addresses: {
         API: '/ip4/127.0.0.1/tcp/0',
         Swarm: [],
-        Gateway: '/ip4/0.0.0.0/tcp/0'
+        Gateway: '/ip4/127.0.0.1/tcp/0'
       },
       Bootstrap: [],
       Discovery: {
@@ -38,7 +38,7 @@ module.exports = {
       Addresses: {
         API: '/ip4/127.0.0.1/tcp/0',
         Swarm: ['/dns4/wrtc-star1.par.dwebops.pub/tcp/443/wss/p2p-webrtc-star'],
-        Gateway: '/ip4/0.0.0.0/tcp/0'
+        Gateway: '/ip4/127.0.0.1/tcp/0'
       },
       Bootstrap: [],
       Discovery: {
@@ -61,7 +61,7 @@ module.exports = {
       Addresses: {
         API: '/ip4/127.0.0.1/tcp/0',
         Swarm: ['/dns4/wrtc-star1.par.dwebops.pub/tcp/443/wss/p2p-webrtc-star'],
-        Gateway: '/ip4/0.0.0.0/tcp/0'
+        Gateway: '/ip4/127.0.0.1/tcp/0'
       },
       Bootstrap: [],
       Discovery: {
