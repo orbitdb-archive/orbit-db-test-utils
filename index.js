@@ -9,10 +9,10 @@ exports.testAPIs = require('./test-apis.js')
 exports.waitForPeers = require('./wait-for-peers')
 
 // Different abstract-leveldown implementations
-const implementations = require('./implementations')
-const properLevelModule = implementations
-  .filter(i => i.key.indexOf('level') > -1)
-  .map(i => i.module)[0]
-const defaultStorage = require('orbit-db-storage-adapter')(properLevelModule)
-exports.defaultStorage = defaultStorage
-exports.implementations = implementations
+// const implementations = require('./implementations')
+// const properLevelModule = implementations
+//   .filter(i => i.key.indexOf('level') > -1)
+//   .map(i => i.module)[0]
+// const defaultStorage = require('orbit-db-storage-adapter')(properLevelModule)
+// exports.defaultStorage = defaultStorage
+// exports.implementations = implementations
