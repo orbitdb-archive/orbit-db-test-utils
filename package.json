@@ -1,6 +1,6 @@
 {
   "name": "orbit-db-test-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -10,9 +10,6 @@
   "scripts": {
     "test": "TEST=all nyc mocha",
     "lint": "standard"
-  },
-  "bin": {
-    "redis-server": "./bin/redis-server"
   },
   "standard": {
     "env": "mocha"
