@@ -1,6 +1,6 @@
 {
   "name": "orbit-db-test-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "repository": {
@@ -18,9 +18,9 @@
   "license": "ISC",
   "note": "DO NOT UPGRADE js-combinatorics",
   "dependencies": {
+    "@mapbox/node-pre-gyp": "^1.0.5",
     "js-combinatorics": "0.6.1",
-    "multihashing-async": "^2.0.1",
-    "node-pre-gyp": "^0.17.0"
+    "multihashing-async": "^2.0.1"
   },
   "devDependencies": {
     "assert": "^2.0.0",
