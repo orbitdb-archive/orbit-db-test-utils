@@ -8,7 +8,7 @@
     "url": "https://github.com/orbitdb/orbit-db-test-utils"
   },
   "scripts": {
-    "test": "TEST=all nyc mocha",
+    "test": "TEST=all nyc mocha --exit",
     "lint": "standard"
   },
   "standard": {
@@ -19,24 +19,25 @@
   "note": "DO NOT UPGRADE js-combinatorics",
   "dependencies": {
     "js-combinatorics": "0.6.1",
-    "multihashing-async": "^2.0.1"
+    "multihashing-async": "^2.0.1",
+    "node-pre-gyp": "^0.17.0"
   },
   "devDependencies": {
-    "ipfs": "^0.52.0",
-    "ipfs-http-client": "~48.1.0",
-    "ipfsd-ctl": "^7.1.0",
-    "go-ipfs": "^0.7.0",
     "assert": "^2.0.0",
+    "go-ipfs": "^0.8.0",
+    "ipfs": "^0.55.0",
+    "ipfs-http-client": "~50.0.0",
+    "ipfsd-ctl": "^8.0.2",
     "mocha": "^8.2.1",
     "mongo-unit": "^2.0.1",
     "nyc": "^15.1.0",
     "standard": "^16.0.2"
   },
   "peerDependencies": {
+    "go-ipfs": "*",
     "ipfs": "*",
     "ipfs-http-client": "*",
-    "ipfsd-ctl": "*",
-    "go-ipfs": "*"
+    "ipfsd-ctl": "*"
   },
   "localMaintainers": [
     "shamb0t <shams@haja.io>",
