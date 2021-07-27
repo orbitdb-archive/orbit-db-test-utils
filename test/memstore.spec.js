@@ -1,5 +1,5 @@
 const assert = require('assert')
-const MemStore = require('../mem-store')
+const { MemStore } = require('../')
 
 describe('MemStore', function () {
   it('puts and gets values', async () => {
