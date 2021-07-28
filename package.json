@@ -27,7 +27,6 @@
     "ipfs-http-client": "^51.0.0",
     "ipfsd-ctl": "^9.0.0",
     "mocha": "^9.0.3",
-    "mongo-unit": "^2.0.1",
     "nyc": "^15.1.0",
     "standard": "^16.0.2"
   },
