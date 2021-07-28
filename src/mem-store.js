@@ -1,8 +1,12 @@
 'use strict'
 
-const multihashing = require('multihashing-async')
-const CID = require('cids')
-const defaultBase = 'base58btc'
+const { sha256 } = require('multiformats/hashes/sha2')
+const json = require('multiformats/codecs/json')
+const { CID } = require('multiformats/cid')
+const { base58btc } = require('multiformats/bases/base58')
+const defaultBase = base58btc
+
+const DAG_CBOR_CODE = 0x71
 
 const cidifyString = (str) => {
   if (!str) {
@@ -13,7 +17,7 @@ const cidifyString = (str) => {
     return str.map(cidifyString)
   }
 
-  return new CID(str)
+  return CID.asCID(str)
 }
 
 /* Memory store using an LRU cache */
@@ -23,10 +27,9 @@ class MemStore {
   }
 
   async put (value) {
-    const buffer = Buffer.from(JSON.stringify(value))
-    const multihash = await multihashing(buffer, 'sha2-256')
-    const cid = new CID(1, 'dag-cbor', Buffer.from(multihash))
-    const key = cid.toBaseEncodedString(defaultBase)
+    const multihash = await sha256.digest(json.encode(value))
+    const cid = CID.create(1, DAG_CBOR_CODE, multihash)
+    const key = cid.toString(defaultBase)
 
     this._store.set(key, value)
 
@@ -34,11 +37,7 @@ class MemStore {
   }
 
   async get (cid) {
-    if (CID.isCID(cid)) {
-      cid = cid.toBaseEncodedString(defaultBase)
-    }
-
-    const data = this._store.get(cid)
+    const data = this._store.get(cid.toString(defaultBase))
 
     // TODO: Change this to refs
     const links = ['next', 'heads']
