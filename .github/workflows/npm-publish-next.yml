@@ -3,7 +3,7 @@ name: Node.js Package (next tag)
 
 on:
   push:
-    branch:
+    branches:
       - main
 
 jobs:
