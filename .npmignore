@@ -2,3 +2,4 @@ test
 .circleci
 .github
 Makefile
+.nyc_output
