@@ -56,17 +56,6 @@ const {
 
 **Note:** You may run into issues with `stopIpfs` hanging the script due to a `js-ipfs` bug
 
-### Spawn a swarm of connected IPFS instances
-
-```JavaScript
-const { swarm } = require('orbit-db-test-utils')
-
-// Enter an array of the node types you want, either 'js' or 'go'
-const nodeTypes = ['js', 'go', 'js']
-
-swarm(nodeTypes).then(nodes => /* ... do stuff  ... */)
-```
-
 ## Contributing
 
 Issues and PRs are welcome.
