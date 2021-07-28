@@ -16,10 +16,8 @@
   },
   "author": "",
   "license": "ISC",
-  "note": "DO NOT UPGRADE js-combinatorics",
   "dependencies": {
     "@mapbox/node-pre-gyp": "^1.0.5",
-    "js-combinatorics": "0.6.1",
     "multihashing-async": "^2.0.1"
   },
   "devDependencies": {
