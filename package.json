@@ -1,7 +1,7 @@
 {
   "name": "orbit-db-test-utils",
   "version": "1.0.3",
-  "description": "",
+  "description": "Shared test utilities for OrbitDB-related projects",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -14,8 +14,8 @@
   "standard": {
     "env": "mocha"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "shamb0t <shams@haja.io>",
+  "license": "MIT",
   "dependencies": {
     "cids": "^1.1.7",
     "multihashing-async": "^2.0.1"
