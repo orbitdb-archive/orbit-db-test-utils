@@ -1,7 +1,8 @@
 # OrbitDB Test Utils _(orbit-db-test-utils)_
 > Shared test utilities for OrbitDB-related projects
 
-[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/orbitdb/Lobby) [![Matrix](https://img.shields.io/badge/matrix-%23orbitdb%3Apermaweb.io-blue.svg)](https://riot.permaweb.io/#/room/#orbitdb:permaweb.io) 
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/orbitdb/Lobby)
+[![Matrix](https://img.shields.io/badge/matrix-%23orbitdb_Lobby%3Agitter.im-blue.svg)](https://app.element.io/#/room/#orbitdb_Lobby:gitter.im)
 
 This repository contains utilities to spin up IPFS nodes and swarms, as well
 as different `abstract-leveldown` implementations to use with `orbit-db-keystore`
