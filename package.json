@@ -1,6 +1,6 @@
 {
   "name": "orbit-db-test-utils",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Shared test utilities for OrbitDB-related projects",
   "main": "index.js",
   "repository": {
