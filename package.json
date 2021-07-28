@@ -17,7 +17,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@mapbox/node-pre-gyp": "^1.0.5",
     "multihashing-async": "^2.0.1"
   },
   "devDependencies": {
