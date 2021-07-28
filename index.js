@@ -1,5 +1,4 @@
 exports.MemStore = require('./src/mem-store')
-exports.swarm = require('./src/swarm')
 exports.config = require('./src/config')
 exports.connectPeers = require('./src/connect-peers')
 exports.getIpfsPeerId = require('./src/get-ipfs-peer-id')
