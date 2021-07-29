@@ -6,8 +6,6 @@ jobs:
     steps:
       - checkout
       - run:
-          command: npm install @mapbox/node-pre-gyp node-fetch
-      - run:
           command: npm ci
       - run:
           command: npm run test
