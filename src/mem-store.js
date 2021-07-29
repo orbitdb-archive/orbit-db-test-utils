@@ -17,7 +17,7 @@ const cidifyString = (str) => {
     return str.map(cidifyString)
   }
 
-  return CID.asCID(str)
+  return CID.parse(str)
 }
 
 /* Memory store using an LRU cache */
