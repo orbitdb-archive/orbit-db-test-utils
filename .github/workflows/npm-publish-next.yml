@@ -18,9 +18,8 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: |
-          git config user.email "odb-bot@noreply.com"
-          git config user.name "OrbitDB Bot"
-          npm version prerelease --preid=`git rev-parse --short HEAD`
+          npm version prerelease --no-git-tag-version \
+            --preid=`git rev-parse --short HEAD`
           npm publish --tag next
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
