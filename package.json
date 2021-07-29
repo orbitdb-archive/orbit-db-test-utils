@@ -26,6 +26,7 @@
     "mocha": "^9.0.3",
     "needle": "^2.8.0",
     "node-fetch": "npm:@achingbrain/node-fetch@^2.6.7",
+    "npm-packlist": "^2.2.2",
     "nyc": "^15.1.0",
     "osenv": "^0.1.5",
     "standard": "^16.0.2"
