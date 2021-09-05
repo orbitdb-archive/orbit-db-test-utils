@@ -35,7 +35,6 @@
   "peerDependencies": {
     "go-ipfs": "*",
     "ipfs": "*",
-    "ipfs-http-client": "*",
     "ipfsd-ctl": "*"
   },
   "localMaintainers": [
