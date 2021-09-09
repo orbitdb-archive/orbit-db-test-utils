@@ -16,7 +16,7 @@ read on!
 ## Install
 
 ```bash
-$ npm install orbit-db-test-utils -D
+$ npm install -D orbit-db-test-utils
 ```
 
 ## Usage
