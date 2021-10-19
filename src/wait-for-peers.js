@@ -6,6 +6,7 @@ const waitForPeers = (ipfs, peersToWait, topic) => {
       try {
         const peers = await ipfs.pubsub.peers(topic)
         const hasAllPeers = peersToWait.map((e) => peers.includes(e)).filter((e) => e === false).length === 0
+        console.log("::::", peers)
 
         // FIXME: Does not fail on timeout, not easily fixable
         if (hasAllPeers) {
@@ -17,7 +18,7 @@ const waitForPeers = (ipfs, peersToWait, topic) => {
         clearInterval(interval)
         reject(e)
       }
-    }, 200)
+    }, 1000)
   })
 }
 
