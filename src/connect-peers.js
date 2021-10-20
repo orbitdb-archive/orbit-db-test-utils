@@ -11,8 +11,6 @@ const connectIpfsNodes = async (ipfs1, ipfs2, options = {
   const addresses1 = id1.addresses.filter(options.filter)
   const addresses2 = id2.addresses.filter(options.filter)
 
-  console.log(">>>>1", addresses1[0])
-  console.log(">>>>2", addresses2[0])
   // await ipfs1.swarm.connect(addresses2[0])
   await ipfs2.swarm.connect(addresses1[0])
 }
