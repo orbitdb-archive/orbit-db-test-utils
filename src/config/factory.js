@@ -13,16 +13,7 @@ module.exports = {
           Swarm: ['/ip4/0.0.0.0/tcp/0'],
           Gateway: '/ip4/0.0.0.0/tcp/0'
         },
-        Bootstrap: [],
-        Discovery: {
-          MDNS: {
-            Enabled: true,
-            Interval: 2
-          },
-          webRTCStar: {
-            Enabled: false
-          }
-        }
+        Bootstrap: []
       }
     }
   },

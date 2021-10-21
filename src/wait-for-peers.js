@@ -17,7 +17,7 @@ const waitForPeers = (ipfs, peersToWait, topic) => {
         clearInterval(interval)
         reject(e)
       }
-    }, 1000)
+    }, 200)
   })
 }
 

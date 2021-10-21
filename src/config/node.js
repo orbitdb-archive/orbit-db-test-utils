@@ -2,6 +2,8 @@ module.exports = {
   timeout: 30000,
   identityKeyFixtures: './test/fixtures/keys/identity-keys',
   signingKeyFixtures: './test/fixtures/keys/signing-keys',
+  identityKeysPath: './orbitdb/identity/identitykeys',
+  signingKeysPath: './orbitdb/identity/signingkeys',
   defaultIpfsConfig: {
     preload: {
       enabled: false
@@ -41,7 +43,7 @@ module.exports = {
       Discovery: {
         MDNS: {
           Enabled: true,
-          Interval: 2
+          Interval: 0
         },
         webRTCStar: {
           Enabled: false
@@ -63,7 +65,7 @@ module.exports = {
       Discovery: {
         MDNS: {
           Enabled: true,
-          Interval: 2
+          Interval: 0
         },
         webRTCStar: {
           Enabled: false
