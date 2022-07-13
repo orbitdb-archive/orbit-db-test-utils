@@ -1,5 +1,5 @@
-const assert = require('assert')
-const { MemStore } = require('../')
+import { strict as assert } from "node:assert"
+import { MemStore } from '../index.js'
 
 describe('MemStore', function () {
   it('puts and gets values', async () => {

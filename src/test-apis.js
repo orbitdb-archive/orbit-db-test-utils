@@ -4,12 +4,18 @@
 
 // Available daemon types are defined in:
 // https://github.com/ipfs/js-ipfsd-ctl#ipfsfactory---const-f--ipfsfactorycreateoptions
+//
+
+import * as ipfsModule from 'ipfs'
+import * as ipfsHttpModule from 'ipfs-http-client'
+import * as ipfsBin from 'go-ipfs'
+
 const jsIpfs = {
   'js-ipfs': {
     type: 'proc',
     test: true,
     disposable: true,
-    ipfsModule: require('ipfs')
+    ipfsModule: ipfsModule
   }
 }
 
@@ -19,8 +25,8 @@ const goIpfs = {
     test: true,
     disposable: true,
     args: ['--enable-pubsub-experiment'],
-    ipfsHttpModule: require('ipfs-http-client'),
-    ipfsBin: require('go-ipfs').path()
+    ipfsHttpModule: ipfsHttpModule,
+    ipfsBin: ipfsBin.path()
   }
 }
 
@@ -36,4 +42,4 @@ if (process.env.TEST === 'all') {
   testAPIs = Object.assign({}, goIpfs)
 }
 
-module.exports = testAPIs
+export default testAPIs

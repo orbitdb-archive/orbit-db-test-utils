@@ -21,4 +21,4 @@ const waitForPeers = (ipfs, peersToWait, topic) => {
   })
 }
 
-module.exports = waitForPeers
+export default waitForPeers

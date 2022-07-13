@@ -1,13 +1,13 @@
-const assert = require('assert')
+import { strict as assert } from "node:assert";
 
-const {
+import {
   connectPeers,
   startIpfs,
   stopIpfs,
   testAPIs,
   getIpfsPeerId,
   waitForPeers
-} = require('../')
+} from "../index.js";
 
 describe('Manual Workflow', function () {
   Object.keys(testAPIs).forEach((api) => {

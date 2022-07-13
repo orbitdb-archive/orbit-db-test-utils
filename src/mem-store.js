@@ -1,9 +1,10 @@
 'use strict'
 
-const { sha256 } = require('multiformats/hashes/sha2')
-const json = require('multiformats/codecs/json')
-const { CID } = require('multiformats/cid')
-const { base58btc } = require('multiformats/bases/base58')
+import { sha256 } from 'multiformats/hashes/sha2'
+import * as json from 'multiformats/codecs/json'
+import { CID } from 'multiformats/cid'
+import { base58btc } from 'multiformats/bases/base58'
+
 const defaultBase = base58btc
 
 const DAG_CBOR_CODE = 0x71
@@ -53,4 +54,4 @@ class MemStore {
   }
 }
 
-module.exports = MemStore
+export default MemStore

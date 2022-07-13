@@ -15,4 +15,4 @@ const stopIpfs = async (ipfsd) => {
   }, 0)
 }
 
-module.exports = stopIpfs
+export default stopIpfs

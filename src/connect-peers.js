@@ -15,4 +15,4 @@ const connectIpfsNodes = async (ipfs1, ipfs2, options = {
   await ipfs2.swarm.connect(addresses1[0])
 }
 
-module.exports = connectIpfsNodes
+export default connectIpfsNodes

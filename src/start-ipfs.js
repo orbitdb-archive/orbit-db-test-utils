@@ -1,7 +1,7 @@
 'use strict'
 
-const Ctl = require('ipfsd-ctl')
-const testAPIs = require('./test-apis')
+import * as Ctl from 'ipfsd-ctl'
+import testAPIs from './test-apis.js'
 
 /**
  * Start an IPFS instance
@@ -25,4 +25,4 @@ const startIpfs = async (type, config = {}) => {
   }
 }
 
-module.exports = startIpfs
+export default startIpfs

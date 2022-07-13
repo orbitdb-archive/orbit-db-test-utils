@@ -5,4 +5,4 @@ const getIpfsPeerId = async (ipfs) => {
   return peerId.id
 }
 
-module.exports = getIpfsPeerId
+export default getIpfsPeerId
