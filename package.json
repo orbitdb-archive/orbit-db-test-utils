@@ -9,8 +9,8 @@
     "url": "https://github.com/orbitdb/orbit-db-test-utils"
   },
   "scripts": {
-    "test": "TEST=all mocha",
-    "coverage": "TEST=all nyc mocha",
+    "test": "TEST=all mocha --exit",
+    "coverage": "TEST=all c8 mocha --exit",
     "lint": "standard"
   },
   "standard": {
@@ -20,6 +20,7 @@
   "license": "MIT",
   "devDependencies": {
     "assert": "^2.0.0",
+    "c8": "^7.11.3",
     "eslint": "^8.19.0",
     "go-ipfs": "^0.13.1",
     "ipfs": "^0.63.5",
@@ -28,7 +29,6 @@
     "needle": "^3.1.0",
     "node-fetch": "npm:@achingbrain/node-fetch@^2.6.7",
     "npm-packlist": "^5.1.1",
-    "nyc": "^15.1.0",
     "osenv": "^0.1.5",
     "standard": "^17.0.0"
   },
