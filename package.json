@@ -9,8 +9,7 @@
     "url": "https://github.com/orbitdb/orbit-db-test-utils"
   },
   "scripts": {
-    "test": "TEST=all mocha --exit",
-    "coverage": "TEST=all c8 mocha --exit",
+    "test": "TEST=all c8 mocha",
     "lint": "standard"
   },
   "standard": {
