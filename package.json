@@ -19,8 +19,8 @@
   "license": "MIT",
   "devDependencies": {
     "c8": "^7.11.3",
-    "go-ipfs": "^0.15.0-rc1",
-    "ipfs": "^0.63.5",
+    "go-ipfs": "^0.15.0",
+    "ipfs": "^0.64.0",
     "ipfsd-ctl": "^12.0.0",
     "mocha": "^10.0.0",
     "standard": "^17.0.0"
