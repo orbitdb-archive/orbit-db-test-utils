@@ -15,7 +15,7 @@ const jsIpfs = {
     type: 'proc',
     test: true,
     disposable: true,
-    ipfsModule: ipfsModule
+    ipfsModule
   }
 }
 
@@ -25,7 +25,7 @@ const goIpfs = {
     test: true,
     disposable: true,
     args: ['--enable-pubsub-experiment'],
-    ipfsHttpModule: ipfsHttpModule,
+    ipfsHttpModule,
     ipfsBin: ipfsBin.path()
   }
 }

@@ -1,4 +1,6 @@
-import { strict as assert } from "node:assert";
+/* eslint-env mocha */
+
+import { strict as assert } from 'node:assert'
 
 import {
   connectPeers,
@@ -7,7 +9,7 @@ import {
   testAPIs,
   getIpfsPeerId,
   waitForPeers
-} from "../index.js";
+} from '../index.js'
 
 describe('Manual Workflow', function () {
   Object.keys(testAPIs).forEach((api) => {

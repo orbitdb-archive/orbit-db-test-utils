@@ -1,4 +1,6 @@
-import { strict as assert } from "node:assert"
+/* eslint-env mocha */
+
+import { strict as assert } from 'node:assert'
 import { MemStore } from '../index.js'
 
 describe('MemStore', function () {
