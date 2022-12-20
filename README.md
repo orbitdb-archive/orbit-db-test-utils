@@ -24,13 +24,13 @@ $ npm install -D orbit-db-test-utils
 ### Spawn a single IPFS instance
 
 ```JavaScript
-const {
+import {
   connectPeers,
   startIpfs,
   stopIpfs,
   getIpfsPeerId,
   waitForPeers
-} = require('../')
+} from '../index.js'
 
 ;(async () => {
   // Create JS and Go nodes
