@@ -24,7 +24,7 @@ const goIpfs = {
     type: 'go',
     test: true,
     disposable: true,
-    args: [],
+    args: ['--enable-pubsub-experiment'],
     ipfsHttpModule,
     ipfsBin: ipfsBin.path()
   }
