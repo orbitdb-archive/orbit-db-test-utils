@@ -18,11 +18,11 @@
   "author": "shamb0t <shams@haja.io>",
   "license": "MIT",
   "devDependencies": {
-    "c8": "^7.11.3",
-    "go-ipfs": "^0.15.0",
-    "ipfs": "^0.64.0",
-    "ipfsd-ctl": "^12.0.0",
-    "mocha": "^10.0.0",
+    "c8": "^7.12.0",
+    "go-ipfs": "^0.17.0",
+    "ipfs": "^0.66.0",
+    "ipfsd-ctl": "^13.0.0",
+    "mocha": "^10.2.0",
     "standard": "^17.0.0"
   },
   "peerDependencies": {
